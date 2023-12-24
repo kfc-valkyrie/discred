@@ -1,0 +1,14 @@
+import math
+a = int(input())
+b = int(input())
+c = int(input())
+discriminant = b*2 - 4ac
+if discriminant < 0:
+    print("Уравнение не имеет действительных корней.")
+elif discriminant == 0:
+    x = -b / (2a)
+    print("Уравнение имеет один корень:", x)
+else:
+    x1 = (-b + math.sqrt(discriminant)) / (2a)
+    x2 = (-b - math.sqrt(discriminant)) / (2a)
+    print("Уравнение имеет два корня:", x1, "и", x2)
